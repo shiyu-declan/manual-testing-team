@@ -1,0 +1,200 @@
+# Manual Testing Results — Hui Wei Ye
+
+## Environment
+
+| Item | Details |
+|---|---|
+| Tester identifier | member-a |
+| Date and time | 05/11/2026 10:36 AM |
+| Browser and version | Firefox 159.0 |
+| Operating system | Windows 11 |
+
+## Login Tests
+
+### Test ID: LOGIN-N02
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | Wei Ye |
+| Website | Swag Labs |
+| Status | Pass |
+
+#### Purpose
+
+Check if there are validations to check if password input is empty
+
+#### Preconditions
+
+A username input must be present
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Password |  |
+
+#### Steps
+
+1. Enter username
+2. Leave password empty
+3. Select Login
+4. Observe feedback
+
+#### Expected Result
+
+The attempt is rejected with validation feedback. The inventory is not reached.
+
+#### Actual Result
+
+Attempt rejected with a validation feedback and inventory is not reached.
+
+#### Evidence
+
+Validation feedback given: "Epic sadface: Password is required"
+
+---
+
+## Equivalence Partitioning
+
+### Test ID: AGE-EP-90-C
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | Wei Ye |
+| Website | Validated Client Server Form |
+| Status | Pass |
+
+#### Purpose
+
+What does this test check?
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | 90 |
+
+#### Steps
+
+1. Restore validation form
+2. Enter baseline values
+3. Replace age with value 90
+4. Select Submit Query
+5. Observe feedback
+
+#### Expected Result
+
+Age is rejected and query isnt submitted as age exceeds maximum age limit
+
+#### Actual Result
+
+Query isn't submitted and feedback prompt on Age box shown
+
+#### Evidence
+
+Feedback provided: Please select a value that is no more than 80.
+
+---
+
+## 2-Point Boundary Tests
+
+### Test ID: AGE-2P-80-C
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | Wei Ye |
+| Website | Validated Client Server Form |
+| Status | Pass |
+
+#### Purpose
+
+Check that an age excatly at the maximum is accepted.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | 80 |
+
+#### Steps
+
+1. Restore validation form
+2. Enter baseline values
+3. Replace age with value 80
+4. Select Submit Query
+5. Observe feedback
+
+#### Expected Result
+
+Age is accepted as it is within the age range of 18-80
+
+#### Actual Result
+
+Age value 80 is accepted
+
+#### Evidence
+
+Valid Input: Your Input passed validation
+
+---
+
+## 3-Point Boundary Tests
+
+### Test ID: AGE-3P-79-C
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | Wei Ye |
+| Website | Validated Client Server Form |
+| Status | Pass |
+
+#### Purpose
+
+Check that an age immediately below the maximum is accepted.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | 79 |
+
+#### Steps
+
+1. Restore validation form
+2. Enter baseline values
+3. Replace age with value 79
+4. Select Submit Query
+5. Observe feedback
+
+#### Expected Result
+
+Age is accepted as it is within the age range of 18-80
+
+#### Actual Result
+
+Age value 79 is accepted
+
+#### Evidence
+
+Valid Input: Your Input passed validation
+
+---

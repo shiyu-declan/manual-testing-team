@@ -1,0 +1,21 @@
+## What makes a test positive or negative?
+A test is positive when the test value used is the expected value the program requires from the users
+A test is negative when the test value used is an unexpected value the program does not expect from the user
+
+## Why can a negative test pass?
+This is to ensure that even in a negative test, the program catches the unexpected result to prevent unexpected outcomes, errors or crashes
+
+## How did equivalence partitioning help you select data?
+It helps me select data that may fall a little outside of boundary values
+
+## What did boundary testing help you investigate?
+Boundary values helps me check for inclusivity in validation and error handling with the requirements
+
+## What did you choose to test during the open-ended activity, and why?
+I chose to use Equivalance Partitioning and test for the minimum requirements of the Last Name input by entering an input with less than 11 characters. This is because some people may accidentally skip through some parts and might even misinput some boxes and forget about them.
+
+## Did your observations lead to follow-up tests?
+Not particularly
+
+## How does your Git history show your contribution?
+It shows through my commits and what I have done throughout a period
