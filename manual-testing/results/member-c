@@ -72,7 +72,8 @@ What does this test check?
 
 #### Preconditions
 
-Firstname field to have a valid input
+The validation form is open.
+All other fields will use the agreed valid baseline.
 
 #### Test Data
 
@@ -82,13 +83,15 @@ Firstname field to have a valid input
 
 #### Steps
 
-1. Input 90 in Age box
-2. Select Submit Query
-3. Observe feedback
+1. Restore validation form
+2. Enter baseline values
+3. Replace age with value 90
+4. Select Submit Query
+5. Observe feedback
 
 #### Expected Result
 
-Rejected 
+Age is rejected and query isnt submitted as age exceeds maximum age limit
 
 #### Actual Result
 
@@ -102,4 +105,93 @@ Feedback provided: Please select a value that is no more than 80.
 
 ## 2-Point Boundary Tests
 
+### Test ID: AGE-2P-80-C
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | Wei Ye |
+| Website | Validated Client Server Form |
+| Status | Pass |
+
+#### Purpose
+
+Check that an age excatly at the maximum is accepted.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | 80 |
+
+#### Steps
+
+1. Restore validation form
+2. Enter baseline values
+3. Replace age with value 80
+4. Select Submit Query
+5. Observe feedback
+
+#### Expected Result
+
+Age is accepted as it is within the age range of 18-80
+
+#### Actual Result
+
+Age value 80 is accepted
+
+#### Evidence
+
+Valid Input: Your Input passed validation
+
+---
+
 ## 3-Point Boundary Tests
+
+### Test ID: YOUR-TEST-ID
+
+| Item | Details |
+|---|---|
+| Test type | Positive / Negative / Recovery |
+| Tester | Your member identifier |
+| Website | Website name |
+| Status | Not run |
+
+#### Purpose
+
+What does this test check?
+
+#### Preconditions
+
+What must be true before the test starts?
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Input name | Input value |
+
+#### Steps
+
+1.
+2.
+3.
+
+#### Expected Result
+
+Write this before executing the test.
+
+#### Actual Result
+
+Not recorded — test has not been executed.
+
+#### Evidence
+
+Not captured.
+
+---
