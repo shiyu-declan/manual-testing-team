@@ -7,8 +7,8 @@
 4.What did boundary testing help you investigate?
     It helped me investigate what happens that when i enter data that is either within or just after the boundary
 5.What did you choose to test during the open-ended activity, and why?
-
+    I choose to test if the page validation form name value had any limitations , i choose this because i wanted to see if it would accept either a really short or long name
 6.Did your observations lead to follow-up tests?
-
+    Yes
 7.How does your Git history show your contribution?
     It shows everything i have currently completed
