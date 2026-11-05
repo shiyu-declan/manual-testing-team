@@ -59,6 +59,99 @@ User cannot login to their account and receives an error message
 
 #### Evidence
 
-[View screenshot](../evidence/member-d/image.png)
+![alt text](../evidence/member-d/image.png)
+
+### Test ID: AGE-2P-81-D
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | member-d |
+| Website | [Test Pages validation form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Technique | 2-point boundary testing |
+| Status | Pass |
+
+#### Purpose
+
+Check that an age immediately above the maximum is rejected.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | `81` |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `81`.
+4. Submit.
+5. Observe the response.
+
+#### Expected Result
+
+Age 81 is rejected because it is above the maximum age of 80.
+
+#### Actual Result
+
+Age 81 is rejected because it is above the maximum age of 80.
+
+#### Evidence
+
+![alt text](../evidence/member-d/image1.png)
+
+### Test ID: AGE-3P-82-D
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | member-d |
+| Website | [Test Pages validation form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Technique | 3-point boundary testing |
+| Status | Pass |
+
+#### Purpose
+
+Check that an age immediately above the maximum is rejected.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | `82` |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `82`.
+4. Submit.
+5. Observe the response.
+
+#### Expected Result
+
+Age 82 is rejected because it is above the maximum age of 80.
+
+#### Actual Result
+
+Age 82 is rejected because it is above the maximum age of 80.
+
+#### Evidence
+
+![alt text](../evidence/member-d/image2.png)
+
 
 ---
