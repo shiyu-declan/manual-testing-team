@@ -11,7 +11,7 @@
 
 ## Login Tests
 
-### Test ID: TEST-01
+### Test ID: LOGIN-P01
 
 | Item | Details |
 |---|---|
@@ -43,15 +43,15 @@ Username, Password must be correct.
 
 #### Expected Result
 
-Login is valid and user is brought to homepage
+The inventory page appears and products are visible.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+User was logged in and inventory page appeared. products were visible
 
 #### Evidence
 
-Not captured.
+[View screenshot](../evidence/member-a/login-p01.png)
 
 ---
 
