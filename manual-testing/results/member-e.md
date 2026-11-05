@@ -18,7 +18,7 @@
 | Test type | Recovery |
 | Tester | Member-E |
 | Website | https://www.saucedemo.com/ |
-| Status | Run |
+| Status | Pass |
 
 #### Purpose
 
@@ -32,14 +32,16 @@ User has an account registered in the website.
 
 | Field | Value |
 |---|---|
-| Input name | standard_user |
+| Username | standard_user |
+| Password | wrong_password |
+| Corrected Password | secret_sauce |
 
 #### Steps
 
-1.Enter standard_user and wrong_password.
+1.Enter `standard_user` and `wrong_password`.
 2.Select Login.
 3.Confirm rejection.
-4.Replace the password with secret_sauce.
+4.Replace the password with `secret_sauce`.
 5.Keep the username unchanged.
 6.Select Login again.
 7.Check whether the inventory appears.
@@ -67,7 +69,7 @@ On the second attempt, able to login after correcting the password and able to v
 | Test type | Negative |
 | Tester | Member-E |
 | Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
-| Status | Run |
+| Status | Pass |
 
 #### Purpose
 
@@ -81,13 +83,17 @@ None.
 
 | Field | Value |
 |---|---|
-| Input name | standard_user |
+| First name | Alex |
+| Surname | TestingStudent |
+| Age | abc |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
 1. Restore the validation form.
-2. Enter the agreed baseline.
-3. Enter abc in age.
+2. Enter the baseline.
+3. Enter `abc` in age field.
 4. Submit.
 5. Observe the response.
 
@@ -115,11 +121,11 @@ Input is prevented when entering the age.
 | Tester | member-e |
 | Website | Test Pages validation form |
 | Technique | 2-point boundary testing |
-| Status | Not run |
+| Status | Pass |
 
 #### Purpose
 
-Check that an age immediately below the minimum is rejected.
+Check whether the age that are either above or below the boundary values is rejected.
 
 #### Preconditions
 
@@ -130,18 +136,21 @@ All other fields will use the agreed valid baseline.
 
 | Field | Value |
 |---|---|
+| First name | Alex |
+| Surname | TestingStudent |
 | Age | `18` & `81` |
-| Other fields | Agreed valid baseline |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
 
 #### Steps
 
 1. Restore the validation form.
-2. Enter the agreed baseline.
+2. Enter the baseline.
 3. Replace age with `18`.
 4. Submit.
 5. Observe the response.
 6. Restore the validation form.
-7. Enter the agreed baseline.
+7. Enter the baseline.
 8. Replace age with `81`.
 9. Submit.
 10. Observe the response again.
@@ -162,3 +171,58 @@ Age 18 is accepted whereas for Age 81, an invalid prompt appears.
 
 ## 3-Point Boundary Tests
 
+### Test ID: AGE-3P-18-81-E
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | member-e |
+| Website | Test Pages validation form |
+| Technique | 3-point boundary testing |
+| Status | Not Run |
+
+#### Purpose
+
+Check whether the age that are either above or below the boundary values is rejected.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First name | Alex |
+| Surname | TestingStudent |
+| Age | `16` & `79` |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the baseline.
+3. Replace age with `16`.
+4. Submit.
+5. Observe the response.
+6. Restore the validation form.
+7. Enter the baseline.
+8. Replace age with `79`.
+9. Submit.
+10. Observe the response again.
+
+#### Expected Result
+
+Age 16 is rejected because it is below the minimum age of 80 whereas Age 79 is accepted.
+
+#### Actual Result
+
+Age 79 is accepted whereas for Age 16, an invalid prompt appears. 
+
+#### Evidence
+
+[View screenshot](../evidence/member-e/age-3p-16-e.png)
+[View screenshot](../evidence/member-e/age-3p-79-e.png)
+---
