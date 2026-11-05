@@ -4,7 +4,7 @@
 
 | Item | Details |
 |---|---|
-| Tester identifier | member-e |
+| Tester identifier | Member-E |
 | Date and time | 5/11/2026 1030 hrs |
 | Browser and version | Google Chrome 157 |
 | Operating system | Windows 11 |
@@ -16,7 +16,7 @@
 | Item | Details |
 |---|---|
 | Test type | Recovery |
-| Tester | member-e |
+| Tester | Member-E |
 | Website | https://www.saucedemo.com/ |
 | Status | Run |
 
@@ -60,6 +60,51 @@ On the second attempt, able to login after correcting the password and able to v
 
 ---
 ## Equivalence Partitioning
+### Test ID: AGE-EP-ABC-E
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | Member-E |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/ |
+| Status | Run |
+
+#### Purpose
+
+Observe whether the input can be entered or is rejected, prevented or cleared.
+
+#### Preconditions
+
+None.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Input name | standard_user |
+
+#### Steps
+
+1.Enter Alex in First Name.
+2.Enter TestingStudent in Surname.
+3.Enter abc in age.
+4.Select Singapore from dropdown.
+5.Enter Manual testing classroom exercise in notes.
+2.Select Submit.
+
+#### Expected Result
+
+The invalid attempted is rejected.
+
+#### Actual Result
+
+Input is prevented when entering the age.
+
+#### Evidence
+
+[View screenshot](../evidence/member-e/age-ep-abc-e.png)
+
+---
 
 ## 2-Point Boundary Tests
 
