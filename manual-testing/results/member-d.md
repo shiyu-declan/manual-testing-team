@@ -21,7 +21,7 @@
 
 | Item | Details |
 |---|---|
-| Test type | Positive |
+| Test type | Negative |
 | Tester | D |
 | Website | [Website name](https://www.saucedemo.com/) |
 | Status | Pass |
