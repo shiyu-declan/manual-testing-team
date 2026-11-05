@@ -24,7 +24,7 @@ Keep surname (`TestingStudent`), age (`30`), country (`Singapore`) and notes (`M
 |---|---|
 | Test type | Exploratory |
 | Tester | member-b |
-| Status | Not run |
+| Status | Observation only |
 
 #### Purpose
 
@@ -39,7 +39,7 @@ Validation form open and freshly loaded.
 | Field | Value |
 |---|---|
 | First name | `A` (1 character) |
-| Other fields | Baseline (TestingStudent, 30, Singapore, notes) |
+| Other fields | Baseline (TestingStudent, 30, Singapore, Manual testing classroom exercise) |
 
 #### Steps
 
@@ -50,15 +50,15 @@ Validation form open and freshly loaded.
 
 #### Expected Result
 
-No documented minimum, so there is no confirmed expected result. Question being investigated: is a 1-character first name accepted or rejected?
+No documented minimum, so no confirmed expected result. Question being investigated: is a 1-character first name accepted or rejected?
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+The form was rejected with a "Firstname too short" error.
 
 #### Evidence
 
-Not captured.
+No screenshot captured. Result recorded in writing above.
 
 ---
 
@@ -68,7 +68,7 @@ Not captured.
 |---|---|
 | Test type | Exploratory |
 | Tester | member-b |
-| Status | Not run |
+| Status | Observation only |
 
 #### Purpose
 
@@ -94,4 +94,198 @@ Validation form open and freshly loaded.
 
 #### Expected Result
 
-No documented minimum. Question being
+No documented minimum. Question being investigated: is a 2-character first name accepted or rejected?
+
+#### Actual Result
+
+The form was rejected with a "Firstname too short" error.
+
+#### Evidence
+
+No screenshot captured. Result recorded in writing above.
+
+---
+
+### Test ID: OWN-B-03
+
+| Item | Details |
+|---|---|
+| Test type | Exploratory |
+| Tester | member-b |
+| Status | Observation only |
+
+#### Purpose
+
+Check how a 3-character first name is handled.
+
+#### Preconditions
+
+Validation form open and freshly loaded.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First name | `Ale` (3 characters) |
+| Other fields | Baseline |
+
+#### Steps
+
+1. Reload the validation form.
+2. Enter the baseline values with first name `Ale`.
+3. Select submit.
+4. Observe the response.
+
+#### Expected Result
+
+No documented minimum. Question being investigated: is a 3-character first name accepted or rejected?
+
+#### Actual Result
+
+The form was rejected with a "Firstname too short" error.
+
+#### Evidence
+
+No screenshot captured. Result recorded in writing above.
+
+---
+
+### Test ID: OWN-B-04
+
+| Item | Details |
+|---|---|
+| Test type | Exploratory |
+| Tester | member-b |
+| Status | Observation only |
+
+#### Purpose
+
+Formally repeat the 4-character case that was rejected during baseline setup.
+
+#### Preconditions
+
+Validation form open and freshly loaded.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First name | `Alex` (4 characters) |
+| Other fields | Baseline |
+
+#### Steps
+
+1. Reload the validation form.
+2. Enter the baseline values with first name `Alex`.
+3. Select submit.
+4. Observe the response.
+
+#### Expected Result
+
+No documented minimum. Earlier baseline setup showed "Firstname too short"; this checks whether that is repeatable.
+
+#### Actual Result
+
+The form was rejected with a "Firstname too short" error again, so the baseline-setup result was repeatable.
+
+#### Evidence
+
+No screenshot captured. Result recorded in writing above.
+
+---
+
+### Test ID: OWN-B-05
+
+| Item | Details |
+|---|---|
+| Test type | Exploratory |
+| Tester | member-b |
+| Status | Observation only |
+
+#### Purpose
+
+Check how a 5-character first name is handled.
+
+#### Preconditions
+
+Validation form open and freshly loaded.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First name | `Alexa` (5 characters) |
+| Other fields | Baseline |
+
+#### Steps
+
+1. Reload the validation form.
+2. Enter the baseline values with first name `Alexa`.
+3. Select submit.
+4. Observe the response.
+
+#### Expected Result
+
+No documented minimum. Question being investigated: is a 5-character first name accepted or rejected?
+
+#### Actual Result
+
+The form submitted and the Validation Report showed "Your Input passed validation". The first name was listed as Alexa, with the other fields matching the baseline.
+
+#### Evidence
+
+No screenshot captured. Result recorded in writing above.
+
+---
+
+### Test ID: OWN-B-06
+
+| Item | Details |
+|---|---|
+| Test type | Exploratory |
+| Tester | member-b |
+| Status | Observation only |
+
+#### Purpose
+
+Check how a 6-character first name is handled.
+
+#### Preconditions
+
+Validation form open and freshly loaded.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First name | `Alexan` (6 characters) |
+| Other fields | Baseline |
+
+#### Steps
+
+1. Reload the validation form.
+2. Enter the baseline values with first name `Alexan`.
+3. Select submit.
+4. Observe the response.
+
+#### Expected Result
+
+No documented minimum. Question being investigated: is a 6-character first name accepted or rejected?
+
+#### Actual Result
+
+The form submitted and the Validation Report showed "Your Input passed validation". The first name was listed as Alexan, with the other fields matching the baseline.
+
+#### Evidence
+
+No screenshot captured. Result recorded in writing above.
+
+---
+
+## Overall Observations
+
+First names of 1 to 4 characters were rejected with "Firstname too short". First names of 5 and 6 characters were accepted. This suggests the form enforces a minimum first-name length of 5 characters, but the instructions page does not document this, so it is recorded as an observation only. Only lengths 1 to 6 were tested, and each length was tried once, so this is not proof of the exact rule.
+
+## Next Question
+
+Is the minimum counted in characters regardless of type (for example, would a name made of spaces or symbols count)? Also, is there a maximum, and does it match the documented limit of fewer than 90 characters?
