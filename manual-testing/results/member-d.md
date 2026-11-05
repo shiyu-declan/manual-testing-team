@@ -17,7 +17,7 @@
 
 ## 3-Point Boundary Tests
 
-### Test ID: 1
+### Test ID: LOGIN-N03
 
 | Item | Details |
 |---|---|
@@ -28,7 +28,7 @@
 
 #### Purpose
 
-Checks if user can login successfully if they enter the correct details
+Checks if user can login successfully if they dont enter their username
 
 #### Preconditions
 
@@ -38,22 +38,24 @@ User must have an existing account
 
 | Field | Value |
 |---|---|
-| Username | standard_user |
+| Username | Empty |
 | Password | secret_sauce |
 
 #### Steps
 
-1. Enter username
-2. Enter password
-3. Click login
+1.Follow the shared starting procedure.
+2.Leave the username empty.
+3.Enter the password.
+4.Select Login.
+5.Observe the feedback.
 
 #### Expected Result
 
-User should be able to successfully login to their account
+The attempt is rejected with validation feedback. The inventory is not reached.
 
 #### Actual Result
 
-User can login to their account
+User cannot login to their account and receives an error message
 
 #### Evidence
 
