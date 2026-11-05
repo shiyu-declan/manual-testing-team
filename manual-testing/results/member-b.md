@@ -57,131 +57,160 @@ No screenshot captured. Result recorded in writing above.
 ---
 
    ## Equivalence Partitioning
+### Requirement Question: First Name Minimum Length
+
+- The handout baseline first name `Alex` (4 characters) was rejected with the message "Firstname too short".
+- The instructions page does not list a minimum length for first name.
+- `Alexander` (9 characters) was accepted with the other baseline values (TestingStudent, 30, Singapore, Manual testing classroom exercise).
+- The exact minimum is unknown, so this is recorded as an observation only, not a confirmed defect.
+- The team baseline now uses `Alexander` as the first name.
+
+---
+
 ### Test ID: AGE-EP-10-B
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Negative |
+| Tester | member-b |
+| Website | Test Pages validation form |
+| Technique | Equivalence partitioning |
+| Status | Pass |
 
 #### Purpose
 
-What does this test check?
+Check that an age below the accepted range (below 18) is rejected.
 
 #### Preconditions
 
-What must be true before the test starts?
+The validation form is open and freshly loaded. All other fields use the agreed valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| First name | `Alexander` |
+| Surname | `TestingStudent` |
+| Age | `10` |
+| Country | `Singapore` |
+| Notes | `Manual testing classroom exercise` |
 
 #### Steps
 
-1.
-2.
-3.
+1. Open https://testpages.eviltester.com/apps/client-server-form-validation/ and reload so the form is empty.
+2. Enter the baseline: first name `Alexander`, surname `TestingStudent`, country `Singapore`, notes `Manual testing classroom exercise`.
+3. Enter `10` in the age field.
+4. Select submit.
+5. Observe the response.
 
 #### Expected Result
 
-Write this before executing the test.
+Age 10 is rejected because it is below the minimum age of 18.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+With the baseline values and only age changed to `10`, a validation message appeared on the age field: "Value must be greater than or equals to 18." The form could not be submitted and no Validation Report page was shown. The rejection came from the browser's input validation before submission, not from a server response. This matches the expected result.
 
 #### Evidence
 
-Not captured.
+No screenshot captured. Result recorded in writing above.
 
 ---
+
    ## 2-Point Boundary Tests
 ### Test ID: AGE-2P-18-B
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Positive |
+| Tester | member-b |
+| Website | Test Pages validation form |
+| Technique | 2-point boundary testing |
+| Status | Pass |
 
 #### Purpose
 
-What does this test check?
+Check that the minimum valid age (18) is accepted.
 
 #### Preconditions
 
-What must be true before the test starts?
+The validation form is open and freshly loaded. All other fields use the agreed valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| First name | `Alexander` |
+| Surname | `TestingStudent` |
+| Age | `18` |
+| Country | `Singapore` |
+| Notes | `Manual testing classroom exercise` |
 
 #### Steps
 
-1.
-2.
-3.
+1. Open https://testpages.eviltester.com/apps/client-server-form-validation/ and reload so the form is empty.
+2. Enter the baseline: first name `Alexander`, surname `TestingStudent`, country `Singapore`, notes `Manual testing classroom exercise`.
+3. Enter `18` in the age field.
+4. Select submit.
+5. Observe the response and check the age shown in the report.
 
 #### Expected Result
 
-Write this before executing the test.
-
-#### Actual Result
-
-Not recorded — test has not been executed.
+Age 18 is accepted, the Validation Report shows "Your Input passed validation", and the submitted age is shown as 18.
 
 #### Evidence
 
-Not captured.
+No screenshot captured. Result recorded in writing above.
 
 ---
+
    ## 3-Point Boundary Tests
    ### Test ID: AGE-3P-19-B
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Positive |
+| Tester | member-b |
+| Website | Test Pages validation form |
+| Technique | 3-point boundary testing (8-value convention: 16, 17, 18, 19, 79, 80, 81, 82) |
+| Status | Pass |
 
 #### Purpose
 
-What does this test check?
+Check that an age one above the minimum boundary (19) is accepted.
 
 #### Preconditions
 
-What must be true before the test starts?
+The validation form is open and freshly loaded. All other fields use the agreed valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| First name | `Alexander` |
+| Surname | `TestingStudent` |
+| Age | `19` |
+| Country | `Singapore` |
+| Notes | `Manual testing classroom exercise` |
 
 #### Steps
 
-1.
-2.
-3.
+1. Open https://testpages.eviltester.com/apps/client-server-form-validation/ and reload so the form is empty.
+2. Enter the baseline: first name `Alexander`, surname `TestingStudent`, country `Singapore`, notes `Manual testing classroom exercise`.
+3. Enter `19` in the age field.
+4. Select submit.
+5. Observe the response and check the age shown in the report.
 
 #### Expected Result
 
-Write this before executing the test.
+Age 19 is accepted, the Validation Report shows "Your Input passed validation", and the submitted age is shown as 19.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+With the baseline values and only age changed to `19`, the form submitted and a Validation Report page appeared showing "Valid Input: Your Input passed validation". The "You submitted" section listed Age as 19, with the other fields matching the baseline. No validation errors appeared. This matches the expected result.
 
 #### Evidence
 
-Not captured.
+No screenshot captured. Result recorded in writing above.
 
 ---
