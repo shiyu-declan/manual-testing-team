@@ -57,14 +57,14 @@ Validation feedback given: "Epic sadface: Password is required"
 
 ## Equivalence Partitioning
 
-### Test ID: YOUR-TEST-ID
+### Test ID: AGE-EP-90-C
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Negative |
+| Tester | Wei Ye |
+| Website | Validated Client Server Form |
+| Status | Pass |
 
 #### Purpose
 
@@ -72,31 +72,31 @@ What does this test check?
 
 #### Preconditions
 
-What must be true before the test starts?
+Firstname field to have a valid input
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| Age | 90 |
 
 #### Steps
 
-1.
-2.
-3.
+1. Input 90 in Age box
+2. Select Submit Query
+3. Observe feedback
 
 #### Expected Result
 
-Write this before executing the test.
+Rejected 
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+Query isn't submitted and feedback prompt on Age box shown
 
 #### Evidence
 
-Not captured.
+Feedback provided: Please select a value that is no more than 80.
 
 ---
 
