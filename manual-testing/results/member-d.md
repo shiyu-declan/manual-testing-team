@@ -43,11 +43,11 @@ User must have an existing account
 
 #### Steps
 
-1.Follow the shared starting procedure.
-2.Leave the username empty.
-3.Enter the password.
-4.Select Login.
-5.Observe the feedback.
+1. Follow the shared starting procedure.
+2. Leave the username empty.
+3. Enter the password.
+4. Select Login.
+5. Observe the feedback.
 
 #### Expected Result
 
@@ -153,5 +153,48 @@ Age 82 is rejected because it is above the maximum age of 80.
 
 ![alt text](../evidence/member-d/image2.png)
 
+### Test ID: LOGIN-N03
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | D |
+| Website | [Test Pages validation form](https://testpages.eviltester.com/apps/client-server-form-validation/) |
+| Status | Fail |
+
+#### Purpose
+
+Checks if user can enter a really short name
+
+#### Preconditions
+
+NULL
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Name | Gru |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace name with `Gru`.
+4. Submit.
+5. Observe the response.
+
+#### Expected Result
+
+The attempt is accepted because the number of characters in the name is less than 90.
+
+#### Actual Result
+
+User cannot enter a really short name
+
+#### Evidence
+
+![alt text](../evidence/member-d/image3.png)
 
 ---
