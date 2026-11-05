@@ -5,51 +5,58 @@
 | Item | Details |
 |---|---|
 | Tester identifier | member-e |
-| Date and time | 05/11/2026 10:30AM |
+| Date and time | 5/11/2026 1030 hrs |
 | Browser and version | Google Chrome 157 |
 | Operating system | Windows 11 |
 
 ## Login Tests
-### Test ID: YOUR-TEST-ID
+
+### Test ID: LOGIN-R01
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Member-E |
-| Website | Website name |
-| Status | Not run |
+| Test type | Recovery |
+| Tester | member-e |
+| Website | https://www.saucedemo.com/ |
+| Status | Run |
 
 #### Purpose
 
-What does this test check?
+To test whether the user can re-enter their credentials after a failed attempt.
 
 #### Preconditions
 
-What must be true before the test starts?
+User has an account registered in the website.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| Input name | standard_user |
 
 #### Steps
 
-1.
-2.
-3.
+1.Enter standard_user and wrong_password.
+2.Select Login.
+3.Confirm rejection.
+4.Replace the password with secret_sauce.
+5.Keep the username unchanged.
+6.Select Login again.
+7.Check whether the inventory appears.
 
 #### Expected Result
 
-Write this before executing the test.
+The invalid attempt is rejected. After correcting the password, login succeeds.
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+For the first attempt, entering with a wrong password prompted a rejected message. 
+On the second attempt, able to login after correcting the password and able to view all the inventory.
 
 #### Evidence
 
-Not captured.
+[View screenshot](../evidence/member-e/login-r01-1st.png)
+[View screenshot](../evidence/member-e/login-r01-2nd.png)
 
 ---
 ## Equivalence Partitioning
@@ -57,3 +64,4 @@ Not captured.
 ## 2-Point Boundary Tests
 
 ## 3-Point Boundary Tests
+
