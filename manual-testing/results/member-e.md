@@ -73,7 +73,7 @@ On the second attempt, able to login after correcting the password and able to v
 
 #### Purpose
 
-Observe whether the input can be entered or is rejected, prevented or cleared.
+Observe whether a non-numeric input can be entered in the age field.
 
 #### Preconditions
 
