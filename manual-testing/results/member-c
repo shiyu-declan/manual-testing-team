@@ -1,0 +1,105 @@
+# Manual Testing Results — Hui Wei Ye
+
+## Environment
+
+| Item | Details |
+|---|---|
+| Tester identifier | member-a |
+| Date and time | 05/11/2026 10:36 AM |
+| Browser and version | Firefox 159.0 |
+| Operating system | Windows 11 |
+
+## Login Tests
+
+### Test ID: LOGIN-N02
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | Wei Ye |
+| Website | Swag Labs |
+| Status | Pass |
+
+#### Purpose
+
+Check if there are validations to check if password input is empty
+
+#### Preconditions
+
+A username input must be present
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Password |  |
+
+#### Steps
+
+1. Enter username
+2. Leave password empty
+3. Select Login
+4. Observe feedback
+
+#### Expected Result
+
+The attempt is rejected with validation feedback. The inventory is not reached.
+
+#### Actual Result
+
+Attempt rejected with a validation feedback and inventory is not reached.
+
+#### Evidence
+
+Validation feedback given: "Epic sadface: Password is required"
+
+---
+
+## Equivalence Partitioning
+
+### Test ID: YOUR-TEST-ID
+
+| Item | Details |
+|---|---|
+| Test type | Positive / Negative / Recovery |
+| Tester | Your member identifier |
+| Website | Website name |
+| Status | Not run |
+
+#### Purpose
+
+What does this test check?
+
+#### Preconditions
+
+What must be true before the test starts?
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Input name | Input value |
+
+#### Steps
+
+1.
+2.
+3.
+
+#### Expected Result
+
+Write this before executing the test.
+
+#### Actual Result
+
+Not recorded — test has not been executed.
+
+#### Evidence
+
+Not captured.
+
+---
+
+## 2-Point Boundary Tests
+
+## 3-Point Boundary Tests
