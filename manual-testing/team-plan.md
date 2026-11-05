@@ -5,8 +5,8 @@
 ## Members
 
 ### Member A
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: shiyu-declan
+- Coordination responsibility: 
 
 ### Member B
 - GitHub username:

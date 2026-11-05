@@ -1,0 +1,62 @@
+# Manual Testing Results — Member A
+
+## Environment
+
+| Item | Details |
+|---|---|
+| Tester identifier | shiyu-declan |
+| Date and time | |
+| Browser and version | |
+| Operating system | |
+
+## Login Tests
+
+### Test ID: TEST-01
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | shiyu-declan |
+| Website | https://www.saucedemo.com/ |
+| Status | run |
+
+#### Purpose
+
+This test checks for a valid login.
+
+#### Preconditions
+
+Username, Password must be correct.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Username | standard_user |
+| Password | secret_sauce |
+
+#### Steps
+
+1. Input username
+2. Input password
+3. Press Login
+
+#### Expected Result
+
+Login is valid and user is brought to homepage
+
+#### Actual Result
+
+Not recorded — test has not been executed.
+
+#### Evidence
+
+Not captured.
+
+---
+
+## Equivalence Partitioning
+
+## 2-Point Boundary Tests
+
+## 3-Point Boundary Tests
