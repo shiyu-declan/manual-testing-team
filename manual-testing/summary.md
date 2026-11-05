@@ -69,17 +69,6 @@ Add links to new executions and identify reused evidence.
 - Main observation:
 - Pull request: Add the actual pull-request link.
 
-## Member Contributions
-
-### Member A
-
-- Guided results: [View results](results/member-a.md)
-- Self-designed tests: [View tests](exploratory/member-a.md)
-- Reflection: [View reflection](reflections/member-a.md)
-- Chosen investigation:
-- Main observation:
-- Pull request: Add the actual pull-request link.
-
 ### Wei Ye
 
 - Guided results: [View results](results/member-c.md)
@@ -88,8 +77,6 @@ Add links to new executions and identify reused evidence.
 - Chosen investigation: Lastname input below 11 characters
 - Main observation: Query rejected
 - Pull request: Already merged
-
-## Member Contributions
 
 ### Member D
 
