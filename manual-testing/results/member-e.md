@@ -85,12 +85,11 @@ None.
 
 #### Steps
 
-1.Enter Alex in First Name.
-2.Enter TestingStudent in Surname.
-3.Enter abc in age.
-4.Select Singapore from dropdown.
-5.Enter Manual testing classroom exercise in notes.
-2.Select Submit.
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Enter abc in age.
+4. Submit.
+5. Observe the response.
 
 #### Expected Result
 
@@ -107,6 +106,59 @@ Input is prevented when entering the age.
 ---
 
 ## 2-Point Boundary Tests
+
+### Test ID: AGE-2P-18-81-E
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | member-e |
+| Website | Test Pages validation form |
+| Technique | 2-point boundary testing |
+| Status | Not run |
+
+#### Purpose
+
+Check that an age immediately below the minimum is rejected.
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Age | `18` & `81` |
+| Other fields | Agreed valid baseline |
+
+#### Steps
+
+1. Restore the validation form.
+2. Enter the agreed baseline.
+3. Replace age with `18`.
+4. Submit.
+5. Observe the response.
+6. Restore the validation form.
+7. Enter the agreed baseline.
+8. Replace age with `81`.
+9. Submit.
+10. Observe the response again.
+
+#### Expected Result
+
+Age 81 is rejected because it is above the maximum age of 80 whereas Age 18 is accepted.
+
+#### Actual Result
+
+Age 18 is accepted whereas for Age 81, an invalid prompt appears. 
+
+#### Evidence
+
+[View screenshot](../evidence/member-e/age-2p-18-e.png)
+[View screenshot](../evidence/member-e/age-2p-81-e.png)
+---
 
 ## 3-Point Boundary Tests
 
