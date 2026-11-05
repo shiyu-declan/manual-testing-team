@@ -153,45 +153,48 @@ Valid Input: Your Input passed validation
 
 ## 3-Point Boundary Tests
 
-### Test ID: YOUR-TEST-ID
+### Test ID: AGE-3P-79-C
 
 | Item | Details |
 |---|---|
-| Test type | Positive / Negative / Recovery |
-| Tester | Your member identifier |
-| Website | Website name |
-| Status | Not run |
+| Test type | Positive |
+| Tester | Wei Ye |
+| Website | Validated Client Server Form |
+| Status | Pass |
 
 #### Purpose
 
-What does this test check?
+Check that an age immediately below the maximum is accepted.
 
 #### Preconditions
 
-What must be true before the test starts?
+The validation form is open.
+All other fields will use the agreed valid baseline.
 
 #### Test Data
 
 | Field | Value |
 |---|---|
-| Input name | Input value |
+| Age | 79 |
 
 #### Steps
 
-1.
-2.
-3.
+1. Restore validation form
+2. Enter baseline values
+3. Replace age with value 79
+4. Select Submit Query
+5. Observe feedback
 
 #### Expected Result
 
-Write this before executing the test.
+Age is accepted as it is within the age range of 18-80
 
 #### Actual Result
 
-Not recorded — test has not been executed.
+Age value 79 is accepted
 
 #### Evidence
 
-Not captured.
+Valid Input: Your Input passed validation
 
 ---
