@@ -13,8 +13,8 @@
 - Coordination responsibility:
 
 ### Member C
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: HuiWeiYe
+- Coordination responsibility: Lastname input below 11 characters
 
 ### Member D
 - GitHub username:

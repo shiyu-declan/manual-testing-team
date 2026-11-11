@@ -1,0 +1,68 @@
+# Self-Designed Testing — Wei Ye
+
+## Testing Idea
+
+Check for Last Name character below minimum character validation in Validated Client Server Form
+
+## Reason
+
+Users might accidentally misclick and input a few random characters in the field
+
+## Test Basis
+
+Checking for rejection feedback for when input has below the minimum required characters in the Last Name field
+
+## Approach
+
+Input random amount of characters that closely replicates a user pressing random keys for around 0.5-1.0 seconds
+
+## Test Cases
+
+### Test ID: OWN-C-01
+
+| Item | Details |
+|---|---|
+| Test type | Negative |
+| Tester | Wei Ye |
+| Status | Pass |
+
+#### Purpose
+
+Checks that inputs that are below 11 characters inside the Last Name field are rejected 
+
+#### Preconditions
+
+The validation form is open.
+All other fields will use the agreed valid baseline.
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| Last Name | djsafj |
+
+#### Steps
+
+1. Restore validation form
+2. Enter baseline values
+3. Replace Last Name with value djsafj
+4. Select Submit Query
+5. Observe feedback
+
+#### Expected Result
+
+Last Name is rejected and query isnt submitted as Last Name does not meet minimum character count
+
+#### Actual Result
+
+Query isn't submitted and feedback is provided
+
+#### Evidence
+
+Feedback provided: Surname provided is too short
+
+---
+
+## Overall Observations
+
+Red text with the following text: Surname provided is too short
