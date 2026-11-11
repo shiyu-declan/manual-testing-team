@@ -5,8 +5,8 @@
 ## Members
 
 ### Member A
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: shiyu-declan
+- Coordination responsibility: 
 
 ### Member B
 - GitHub username:
@@ -27,6 +27,17 @@
 ## Guided Test Allocation
 
 ## Agreed Baseline Data
+
+Firstname
+Alexa
+Surname
+TestingStudent
+Age
+30
+Country
+Singapore
+Notes
+Manual testing classroom exercise
 
 ## Open-Ended Testing Allocation
 
