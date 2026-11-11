@@ -57,6 +57,106 @@ User was logged in and inventory page appeared. products were visible
 
 ## Equivalence Partitioning
 
+### Test ID: VALIDATION-P01
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | shiyu-declan |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/submit |
+| Status | run |
+
+#### Purpose
+
+This test checks for valid details
+
+#### Preconditions
+
+-
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First Name | Alexa |
+| Last Name | TestingStudent |
+| Age | 30 |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
+
+#### Steps
+
+1. Input first name
+2. Input last name
+3. Input age
+4. Input country
+5. Input notes
+
+#### Expected Result
+
+The form is valid
+
+#### Actual Result
+
+Validation report Input passed validation
+
+#### Evidence
+
+[View screenshot](../evidence/member-a/validation-p01.png)
+
+---
+
 ## 2-Point Boundary Tests
+
+### Test ID: 2-POINT-BOUNDARY-P01
+
+| Item | Details |
+|---|---|
+| Test type | Positive |
+| Tester | shiyu-declan |
+| Website | https://testpages.eviltester.com/apps/client-server-form-validation/submit |
+| Status | run |
+
+#### Purpose
+
+This test checks for the boundary of the age case
+
+#### Preconditions
+
+-
+
+#### Test Data
+
+| Field | Value |
+|---|---|
+| First Name | Alexa |
+| Last Name | TestingStudent |
+| Age | 17,18 |
+| Country | Singapore |
+| Notes | Manual testing classroom exercise |
+
+#### Steps
+
+1. Input first name
+2. Input last name
+3. Input age = 17
+4. Click submit
+5. Input age = 18
+6. Click submit
+
+#### Expected Result
+
+The form is invalid for 17 but valid for 18
+
+#### Actual Result
+
+For age 17 is invalid, but for age 18 form was valid 
+
+#### Evidence
+
+[View screenshot](../evidence/member-a/2-point.png)
+[View screenshot](../evidence/member-a/2-point-18.png)
+
+---
 
 ## 3-Point Boundary Tests

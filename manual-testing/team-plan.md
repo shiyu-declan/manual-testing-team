@@ -28,6 +28,17 @@
 
 ## Agreed Baseline Data
 
+Firstname
+Alexa
+Surname
+TestingStudent
+Age
+30
+Country
+Singapore
+Notes
+Manual testing classroom exercise
+
 ## Open-Ended Testing Allocation
 
 ## Repository Integration Arrangements
