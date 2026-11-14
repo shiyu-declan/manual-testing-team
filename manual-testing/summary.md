@@ -89,9 +89,9 @@ Add links to new executions and identify reused evidence.
 
 ### Member E
 
-- Guided results: [View results](results/member-b.md)
-- Self-designed tests: [View tests](exploratory/member-b.md)
-- Reflection: [View reflection](reflections/member-b.md)
-- Chosen investigation:
-- Main observation:
-- Pull request: Add the actual pull-request link.
+- Guided results: [View results](results/member-e.md)
+- Self-designed tests: [View tests](exploratory/member-e.md)
+- Reflection: [View reflection](reflections/member-e.md)
+- Chosen investigation: Error handing in Shopping cart.
+- Main observation: The shopping cart handles a few errors. Have not taken account on certain scenarios like handling an empty cart. Though, it handles common errors such as input validations in the quantity section.
+- Pull request: Already merged.

@@ -21,8 +21,8 @@
 - Coordination responsibility:
 
 ### Member E — If Applicable
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: TariqAkbar
+- Coordination responsibility: Error handing in Shopping cart.
 
 ## Guided Test Allocation
 
