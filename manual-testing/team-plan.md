@@ -5,16 +5,16 @@
 ## Members
 
 ### Member A
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: shiyu-declan
+- Coordination responsibility: 
 
 ### Member B
 - GitHub username:
 - Coordination responsibility:
 
 ### Member C
-- GitHub username:
-- Coordination responsibility:
+- GitHub username: HuiWeiYe
+- Coordination responsibility: Lastname input below 11 characters
 
 ### Member D
 - GitHub username:
